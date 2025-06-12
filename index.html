@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Colaboración Estratégica | Creace.co para Inexmoda</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons (Corrected Script URL) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Custom styles to integrate brand colors and fonts */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #334155; /* Gris Oscuro */
+        }
+        .bg-brand-blue { background-color: #173154; }
+        .text-brand-blue { color: #173154; }
+        .bg-brand-red { background-color: #e94f1a; }
+        .text-brand-red { color: #e94f1a; }
+        .border-brand-red { border-color: #e94f1a; }
+        .bg-light-gray { background-color: #F6F9FC; }
+        
+        /* Animation classes for scroll effects */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .reveal-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Style for active tab */
+        .tab-active {
+            background-color: #173154;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- HEADER -->
+    <header id="header" class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#home">
+                <img src="https://ik.imagekit.io/50wnllxkw/Logo%20Creace.png?updatedAt=1749758502904" alt="Logo de Creace.co" class="h-8 md:h-10 w-auto">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#vision" class="text-gray-600 hover:text-brand-red transition-colors duration-300">Visión</a>
+                <a href="#diagnostico" class="text-gray-600 hover:text-brand-red transition-colors duration-300">Diagnóstico</a>
+                <a href="#propuesta" class="text-gray-600 hover:text-brand-red transition-colors duration-300">Propuesta</a>
+                <a href="#alianza" class="text-gray-600 hover:text-brand-red transition-colors duration-300">Alianza</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <a href="https://www.creace.co/contacto/" target="_blank" class="hidden md:inline-block bg-brand-red text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transform hover:-translate-y-0.5 transition-all duration-300 shadow-lg shadow-red-500/20">
+                Agendar Reunión
+            </a>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100">
+                <svg id="menu-open-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                <svg id="menu-close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <nav class="flex flex-col items-center space-y-4 p-4">
+                <a href="#vision" class="text-gray-600 hover:text-brand-red transition-colors duration-300">Visión</a>
+                <a href="#diagnostico" class="text-gray-600 hover:text-brand-red transition-colors duration-300">Diagnóstico</a>
+                <a href="#propuesta" class="text-gray-600 hover:text-brand-red transition-colors duration-300">Propuesta</a>
+                <a href="#alianza" class="text-gray-600 hover:text-brand-red transition-colors duration-300">Alianza</a>
+                <a href="https://www.creace.co/contacto/" target="_blank" class="w-full text-center bg-brand-red text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300">
+                    Agendar Reunión
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="min-h-screen flex items-center bg-light-gray pt-24 md:pt-0">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-brand-blue leading-tight mb-4 reveal">
+                        Alianza para la Transformación Tecnológica del Sector Moda
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 reveal" style="transition-delay: 200ms;">
+                        Propuesta Estratégica de <span class="font-semibold">Creace.co</span> para <span class="font-semibold">Inexmoda</span>
+                    </p>
+                    <a href="https://www.creace.co/contacto/" target="_blank" class="bg-brand-red text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 transform hover:-translate-y-1 transition-all duration-300 inline-block shadow-2xl shadow-red-500/30 reveal" style="transition-delay: 400ms;">
+                        Agendar Reunión
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISION SECTION -->
+        <section id="vision" class="py-20 md:py-32 bg-brand-blue text-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto text-center reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Un Hub Tecnológico para Liderar el Futuro de la Moda</h2>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Entendemos que Inexmoda busca consolidarse como un <strong class="text-white">hub tecnológico</strong>, no desarrollando tecnología propia, sino creando <strong class="text-white">alianzas estratégicas</strong> con expertos para llevar soluciones de alto impacto al gremio. Proponemos un modelo de <strong class="text-white">partnership comercial</strong>, donde Inexmoda actúa como conector y validador, y nosotros como el brazo ejecutor tecnológico, asegurando que las marcas del sector prosperen y se internacionalicen.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIAGNOSTICO SECTION -->
+        <section id="diagnostico" class="py-20 md:py-28 bg-light-gray">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">Entendemos los Retos, Vemos las Oportunidades</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">El sector enfrenta desafíos clave que, con la estrategia correcta, se convierten en grandes oportunidades de crecimiento.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal" style="transition-delay: 100ms;">
+                        <div class="bg-red-100 text-brand-red w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                            <i data-lucide="package-minus" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-3">Crisis de Inventarios</h3>
+                        <p class="text-gray-500">La brecha entre inventarios proyectados y demanda real representa un alto costo financiero, un dolor latente en el sector.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal" style="transition-delay: 200ms;">
+                        <div class="bg-red-100 text-brand-red w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                             <i data-lucide="recycle" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-3">Sostenibilidad y Trazabilidad</h3>
+                        <p class="text-gray-500">El inminente "Pasaporte Digital" es un desafío técnico y logístico para el cual el sector necesita preparación y herramientas adecuadas.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal" style="transition-delay: 300ms;">
+                        <div class="bg-red-100 text-brand-red w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                             <i data-lucide="rocket" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-blue mb-3">Marketing Digital "en Crudo"</h3>
+                        <p class="text-gray-500">Muchas PYMES desconocen el potencial del marketing digital integral para impulsar ventas y, crucialmente, la internacionalización.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROPUESTA SECTION -->
+        <section id="propuesta" class="py-20 md:py-28">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">Una Hoja de Ruta para el Crecimiento</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Proponemos un enfoque por fases, comenzando con soluciones de implementación rápida y alto impacto.</p>
+                </div>
+
+                <!-- Tabs -->
+                <div class="max-w-4xl mx-auto reveal">
+                    <div class="flex justify-center border-b border-gray-200 mb-8" id="tabs-container">
+                        <button data-tab="fase1" class="tab-button px-6 py-3 font-semibold text-lg border-b-4 border-transparent hover:text-brand-red tab-active">Fase 1: Bases para el Éxito</button>
+                        <button data-tab="fase2" class="tab-button px-6 py-3 font-semibold text-lg border-b-4 border-transparent hover:text-brand-red">Fase 2: Hacia la Sofisticación</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div id="fase1" class="tab-content">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="bg-light-gray p-6 rounded-lg">
+                                <h4 class="font-bold text-lg text-brand-blue mb-2">Estrategia de Paid Media</h4>
+                                <p class="text-gray-600">Diseño y gestión de campañas en Google Ads y Meta para crear funnels de conversión, capturar clientes y abrir la puerta a la internacionalización.</p>
+                            </div>
+                            <div class="bg-light-gray p-6 rounded-lg">
+                                <h4 class="font-bold text-lg text-brand-blue mb-2">Optimización E-commerce</h4>
+                                <p class="text-gray-600">Auditoría y mejora de tiendas online para maximizar la conversión, desde la velocidad de carga hasta la experiencia de pago y post-venta.</p>
+                            </div>
+                            <div class="bg-light-gray p-6 rounded-lg col-span-1 md:col-span-2">
+                                <h4 class="font-bold text-lg text-brand-blue mb-2">Talleres de Formación</h4>
+                                <p class="text-gray-600">Capacitaciones prácticas para el gremio sobre fundamentos de marketing digital, internacionalización y más, elevando el conocimiento del sector.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fase2" class="tab-content hidden">
+                         <div class="grid md:grid-cols-2 gap-8">
+                            <div class="bg-light-gray p-6 rounded-lg">
+                                <h4 class="font-bold text-lg text-brand-blue mb-2">Predictibilidad de la Demanda</h4>
+                                <p class="text-gray-600">Actuamos como su consultor técnico para evaluar y seleccionar proveedores de IA que ofrezcan modelos de predicción de tendencias e inventarios.</p>
+                            </div>
+                            <div class="bg-light-gray p-6 rounded-lg">
+                                <h4 class="font-bold text-lg text-brand-blue mb-2">Pasaporte Digital y Trazabilidad</h4>
+                                <p class="text-gray-600">Aportamos nuestra perspectiva tecnológica para analizar y validar soluciones de trazabilidad, asegurando su viabilidad en el contexto colombiano.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ALIANZA SECTION -->
+        <section id="alianza" class="py-20 md:py-28 bg-light-gray">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">Un Modelo de Alianza Basado en el Éxito Mutuo</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Proponemos un modelo de "Agente Comercial" simbiótico y transparente.</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto reveal">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-4">
+                        <!-- Inexmoda Card -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg text-center w-full md:w-1/3">
+                            <h3 class="text-2xl font-bold text-brand-blue">Inexmoda</h3>
+                            <p class="mt-2 text-gray-600">Identifica, convoca y actúa como el puente de confianza para el sector.</p>
+                        </div>
+
+                        <!-- Connector -->
+                        <div class="text-brand-red flex flex-row md:flex-col items-center gap-4">
+                            <i data-lucide="arrow-left-right" class="w-12 h-12"></i>
+                        </div>
+
+                        <!-- Creace.co Card -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg text-center w-full md:w-1/3">
+                             <h3 class="text-2xl font-bold text-brand-blue">Creace.co</h3>
+                             <p class="mt-2 text-gray-600">Presenta, diagnostica e implementa las soluciones tecnológicas.</p>
+                        </div>
+                    </div>
+                    <div class="mt-12 text-center bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-lg text-gray-700">El modelo se basa en un <strong class="text-brand-red">esquema de comisión o referral</strong> por cada cliente que contrate nuestros servicios a través de la alianza, asegurando un beneficio mutuo basado en resultados reales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CTA SECTION -->
+        <section id="contacto" class="bg-brand-blue">
+            <div class="container mx-auto px-6 py-20 md:py-28 text-center">
+                <div class="max-w-2xl mx-auto reveal">
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">¿Listos para Empezar?</h2>
+                    <p class="text-lg text-gray-300 mb-10">Agendemos una reunión estratégica para definir los próximos pasos y lanzar un proyecto piloto que demuestre el poder de esta alianza.</p>
+                    <a href="https://www.creace.co/contacto/" target="_blank" class="bg-brand-red text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-opacity-90 transform hover:-translate-y-1.5 transition-all duration-300 inline-block shadow-2xl shadow-red-500/40">
+                        Agendar Reunión Estratégica
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+             <a href="#home">
+                <img src="https://ik.imagekit.io/50wnllxkw/Logo%20Creace.png?updatedAt=1749758502904" alt="Logo de Creace.co" class="h-8 mx-auto mb-6 opacity-70">
+            </a>
+            <p>&copy; 2024 Creace.co. Todos los derechos reservados.</p>
+            <p class="text-sm mt-2">Propuesta de colaboración para Inexmoda.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // This check ensures lucide is available before trying to use it.
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuOpenIcon = document.getElementById('menu-open-icon');
+            const menuCloseIcon = document.getElementById('menu-close-icon');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                menuOpenIcon.classList.toggle('hidden');
+                menuCloseIcon.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu on link click
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuOpenIcon.classList.remove('hidden');
+                    menuCloseIcon.classList.add('hidden');
+                });
+            });
+
+            // Tab functionality
+            const tabsContainer = document.getElementById('tabs-container');
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabsContainer.addEventListener('click', (e) => {
+                if (e.target.matches('.tab-button')) {
+                    const tabId = e.target.dataset.tab;
+
+                    tabButtons.forEach(button => {
+                        button.classList.remove('tab-active');
+                    });
+                    e.target.classList.add('tab-active');
+
+                    tabContents.forEach(content => {
+                        if (content.id === tabId) {
+                            content.classList.remove('hidden');
+                        } else {
+                            content.classList.add('hidden');
+                        }
+                    });
+                }
+            });
+
+            // Scroll animations with Intersection Observer
+            const revealElements = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            revealElements.forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                         // Adjust for fixed header height
+                        const headerOffset = document.getElementById('header').offsetHeight;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
